@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feliz Dia das Mulheres, Princesa! 🌸</title>
+<title>Aquela que merece ser amada 🌸</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -495,13 +495,6 @@
     color: var(--text-dark);
     line-height: 1.75;
   }
-48%  { left: calc(100% + 10px); transform: scaleX(1);  }
-    49%  { left: calc(100% + 10px); transform: scaleX(-1); }
-    50%  { left: calc(100% + 10px); transform: scaleX(-1); }
-    98%  { left: -30px;  transform: scaleX(-1); }
-    99%  { left: -30px;  transform: scaleX(1);  }
-    100% { left: -30px;  transform: scaleX(1);  }
-  }
 
   /* ── Gatinho Sprite ── */
   #catCanvas {
@@ -514,6 +507,11 @@
 </style>
 </head>
 <body>
+  <!-- 🎵 SUBSTITUA "SUA_MUSICA.mp3" pelo caminho do seu arquivo -->
+  <audio id="bgMusic" loop>
+    <source src="musica.mp4" type="audio/mpeg">
+  </audio>
+
 
 <!-- Background blobs -->
 <div class="blob blob-1"></div>
@@ -529,12 +527,11 @@
     <!-- ===== SCREEN 1: Welcome ===== -->
     <div class="screen active" id="screen1">
       <div class="s1-image-wrap">
-        <!-- 🌸 SUBSTITUA PELO CAMINHO DA FOTO: <img src="SUA_FOTO.jpg" alt="Mikaelle"> -->
-        🌸
+        <img src="flores.jpeg" alt="Mikaelle"> 
       </div>
       <div class="hearts-row">♡ ♡ ♡ ♡ ♡</div>
-      <h1 class="s1-title">Feliz Dia das<br>Mulheres, Princesa!</h1>
-      <p class="s1-hint">Clica no botão hehe (づ◡◡)づ </p>
+      <h1 class="s1-title">Feliz Dia das<br>Mulheres, Princesa</h1>
+      <p class="s1-hint">Clica no botão hehehe (づ◡◡)づ </p>
       <button class="btn-pink" onclick="goTo(2)">Próximo!! 🌹</button>
     </div>
 
@@ -567,8 +564,7 @@
     <!-- ===== SCREEN 3: Sad ===== -->
     <div class="screen" id="screen3">
       <div class="s3-img">
-        <!-- 🌸 SUBSTITUA PELO CAMINHO DE UMA FOTO FOFA: <img src="SAD_FOTO.jpg" alt="triste"> -->
-        🥺
+      <img src="triste.jpeg" alt="triste"> 
       </div>
       <p class="s3-text">Awh... Vamos tentar de novo? > _ <</p>
       <button class="btn-pink" onclick="goTo(2)">De novo..? 🥺</button>
@@ -579,20 +575,21 @@
       <!-- Sparkles container -->
       <div id="sparkleContainer" style="position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1;"></div>
       <div class="s4-photo">
-      <img src="ela.jpeg" alt="Mikaelle"> 
+      <img src="ela.jpeg" alt="Mikaelle">
       </div>
       <canvas id="catCanvas"></canvas>
 
       <div class="s4-letter-box">
-          <p class="s4-letter-title">Para minha Mikaelle</p>
+          <p class="s4-letter-title">Para a mulher mais bonita que pisou nessa terra!</p>
           <p class="s4-kaomoji">(^o^)</p>
           <div class="s4-text">
-            <!-- 🌸 SUBSTITUA PELO SEU TEXTO AQUI -->
-            <p>Escreva aqui sua mensagem de amor para a Mikaelle. Você pode colocar quantos parágrafos quiser!</p>
-            <p>Conte como ela é especial para você, o que você sente, momentos favoritos... tudo que vier do coração. ♡</p>
+            <p>É, o dia das mulheres é hoje, e eu quero falar que, eu admiro muito a mulher que você é. Admiro seu valor, dedicação, esforço, empenho, força de vontade, inteligência, elegância, determinação, alegria, estilo e carinho.
+
+E que quero que saiba que, eu admiro todos esses detalhes em você, não só pelo seu jeito, mas pelas coisas que faz. Isso te destaca e te torna alguém diferente.
+
+Escrevi umas coisinhas sobre você logo abaixo. Espero que goste :)</p>
             <br>
-            <p>Ela vai amar ler cada palavra. 🌸</p>
-            <!-- FIM DA MENSAGEM -->
+            <p>E feliz dia da Mulher pra você🌷</p>
           </div>
         </div>
       <div class="hearts-row" style="margin-top:16px; margin-bottom:16px;">♡ ♡ ♡ ♡ ♡</div>
@@ -609,9 +606,7 @@
             <circle cx="16" cy="16" r="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1.2"/>
           </svg>Dedicada</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>Admiro muito a forma como você é dedicada nas coisas, e ainda mais em alguma coisa nova que começa a fazer. Acho isso tão bonito e atraente em você, porque quando tu começa a contar e explicar sobre a coisa que está fazendo, parece ser tão fácil, meio que passa essa impressão. Não tem nada mais atraente que uma mulher assim, que se esforça pra aprender e fazer algo novo, e falo isso com maior orgulho também.</p> 
         </div>
       </div>
 
@@ -627,9 +622,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="16" cy="15" r="2.5" fill="#fff9c4" stroke="#f9a825" stroke-width="1"/>
           </svg>Esforçada</p>
         <div class="s4-text">
-        <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+        <p>A, algo que eu realmente reconheço: o seu esforço. Se você fala que vai começar a fazer algo, você vai lá, faz, e se torna a melhor nisso, e em poucos dias também. Isso é pra poucos, e todos merecem reconhecer isso, porque é algo de se admirar, e eu presto muita atenção nisso, porque tu conta tudo pra mim e eu fico e sempre rico em detalhe. Isso é algo que chama atenção</p> 
         </div>
       </div>
 
@@ -651,9 +644,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="16" cy="16" r="5" fill="#fff176" stroke="#f9a825" stroke-width="1.2"/>
           </svg>Carinhosa</p>
         <div class="s4-text">
-        <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+        <p>Você é muito carinhosa, E EU AMO ESSE SEU DETALHE, por mais que eu fale que é grossa as vezes, mas você é muito carinhosa. É carinhoso comigo, não só por mensagem, mas como nos áudios e em call, e eu fico todo sem jeito as vezes, quando é carinhosa comigo, mas eu retribuo esse seu carinho também, e guardo ele com maior carinho comigo, porque me sinto muito amado por isso. Não é qualquer que é digno do seu carinho :)</p> 
         </div>
       </div>
 
@@ -675,9 +666,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="16" cy="16" r="3" fill="#ad1457"/>
           </svg>Amorosa</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>Outro detalhe seu que também AMO. Muito amorosa, e ainda mais comigo. Não é aquele carinho forçado, mas na forma como você fala comigo, nas nossas risadas juntos, em call também, e quando jogamos juntos. É tudo tão leve bom. É um jeito seu que gosto muito, e também é algo recíproco, e gosto muito disso e  você</p> 
         </div>
       </div>
 
@@ -695,9 +684,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <path d="M16 25 C18 23 20 24 21 26" stroke="#66bb6a" stroke-width="1.2" fill="none"/>
           </svg>Engraçada</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>Você sempre me faz rir, não importa com o que seja, mas você sempre consegue tirar um sorriso do meu rosto, com alguma coisa que você falou, memes, alguma coisa aleatória, quando implica comigo ou algo bem aleatório, mas sempre me faz rir, e te acho muito engraçada por essas coisas. É terapêutico as vezes</p> 
         </div>
       </div>
 
@@ -713,9 +700,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <ellipse cx="16" cy="18" rx="4" ry="2.5" fill="#fff0f5" stroke="#f48fb1" stroke-width="1"/>
           </svg>Estilosa</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>Simplesmente muito estilosa! Você sabe se vestir e combinar looks, mesmo eu não entendo nada, mas até eu consigo perceber isso, e também é algo que chama atenção. Sempre combinando e variando entre os looks, e quando sai na rua, é a mais bonita de todas. Parece até um anjo</p> 
         </div>
       </div>
 
@@ -732,9 +717,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <path d="M16 25 C13 23 11 24 10 26" stroke="#66bb6a" stroke-width="1.2" fill="none"/>
           </svg>Sabe conversar sobre vários assuntos</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>Sabe falar sobre tudo, e não importa o assunto que seja, mas você sempre tem algum ponto de vista pra dar. Que nem aquela vez que falei:"Se eu perguntar sobre buraco negro pra Mikaelle, ela vai saber responder e vai ter uma opinião sobre", e isso muito verdade, porque você vai saber o que falar, e você tem um leque de vários assuntos pra conversar. Simplesmente sabe conversar sobre tudo. Sempre conversamos sobre vários assuntos diferentes, até cansar, e você vai seguindo o ritmo no assunto</p> 
         </div>
       </div>
 
@@ -748,9 +731,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="16" cy="13" r="3" fill="#fff9c4" stroke="#f9a825" stroke-width="1"/>
           </svg>Uma nerd que sabe de tudo um pouco</p>
         <div class="s4-text">
-        <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+        <p>Me amarro nesse seu jeito nerd de ser aaaa. Não aquela nerd que é crânio em tecnologia, mas aquela nerd que sabe um pouco de cada assunto, como animes, jogos, gameplays, desenhos, culturas e isso te torna alguém bem interessante de se conversar e trocar uma idéia</p> 
         </div>
       </div>
 
@@ -766,11 +747,9 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="14" cy="20" r="1" fill="#e91e8c"/>
             <circle cx="16" cy="21" r="1" fill="#e91e8c"/>
             <circle cx="18" cy="20" r="1" fill="#e91e8c"/>
-          </svg>A melhor em tudo (em jogos também)</p>
+          </svg>A melhor em tudo</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>EA melhor em tudo, até em jogos, e isso eu não posso negar, e você sempre joga isso na minha cara, mas não tem como negar esse fato. Isso também vem muito do seu empenho e dedicação, e em qualquer oportunidade eu vou elogiar esse seu traço</p> 
         </div>
       </div>
 
@@ -790,9 +769,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="16" cy="16" r="4.5" fill="#fff176" stroke="#f9a825" stroke-width="1.2"/>
           </svg>É uma boa ouvinte</p>
         <div class="s4-text">
-          <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+          <p>Você sabe ouvir e aconselhar sobre algum assunto que a pessoa possa estar falando,  e não é à toa que está fazendo psicologia, e você sempre me ouve (quando não está distraída com alguma coisa), e eu também te ouço, então é algo recíproco entre nós dois, mas me sinto um pouco mais leve quando te conto as coisas e você não me julga por alguma coisa que falei, e tu ouve e tenta chegar na melhor solução pro assunto</p> 
         </div>
       </div>
 
@@ -808,14 +785,13 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
             <circle cx="16" cy="17" r="3" fill="#fff0f5" stroke="#f48fb1" stroke-width="1"/>
           </svg>Irá cuidar de você quando estiver precisando</p>
         <div class="s4-text">
-         <p>Esse momento da conversa de vocês tem um detalhe importante: ela pareceu esperar algo de você para o Dia da Mulher. A forma como você descreveu — ela perguntando “o que você vai fazer pra mim?” com uma certa indignação brincando — soa como provocação carinhosa, tipo quando alguém quer ver se a outra pessoa pensou nela. 😊
-Como vocês já têm esse clima de proximidade (conversas longas, brincadeiras, LEGO juntos, flerte, carinho), não precisa ser nada gigante. O que mais conta é mostrar que você lembrou dela.
-Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p> 
+         <p>E você cuida quando estão precisando, e você está ali para ajudar e entender a dor da pessoa. Isso é muito louvável e admirável também, porque tenta ajudar do seu jeito, e isso que importa nesses momentos de vulnerabilidade. Falo isso porque sempre esteve aqui quando precisei e tentou me ajudar e me ouvir em alguma questão minha</p> 
         </div>
       </div>
 
       <div class="hearts-row" style="margin-top:18px;">♡ ♡ ♡ ♡ ♡</div>
     </div>
+
 
   </div>
 </div>
@@ -967,6 +943,19 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
   }
 
   // Inicia o gato quando chegar na tela 4
+
+  // ── Música de fundo ──
+  const bgMusic = document.getElementById('bgMusic');
+  let musicStarted = false;
+
+  function startMusic() {
+    if (!musicStarted) {
+      bgMusic.volume = 0.6;
+      bgMusic.play().catch(() => {});
+      musicStarted = true;
+    }
+  }
+
   // ── Screen navigation ──
   function goTo(n) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -975,6 +964,7 @@ Aqui vão algumas ideias simples que combinam com o que vocês já têm:</p>
       startSparkles();
       setTimeout(initReveal, 200);
       setTimeout(initCat, 100);
+      startMusic();
       } else {
       stopSparkles();
     }
